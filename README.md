@@ -8,7 +8,7 @@ This automated Python pipeline fetches daily weather data from OpenWeatherMap, o
 * **Automated committing and Error Catching**: This program can self commit new data to the repository and run its own backend python unittests.
 * **User Interface**: This project has a user program that can be run from home and allows users to search for the weather forecasts for any day the project has records for.
 
-## Requierments
+## Requirements
 * This project requires users to have **Python version 3.x or higher**.
 * To upgrade to this use the command for MacOS
 ```bash
