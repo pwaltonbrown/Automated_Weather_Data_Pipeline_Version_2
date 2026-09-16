@@ -4,7 +4,7 @@ My degree focused heavily on traditional software development, so I wanted to te
 This automated Python pipeline fetches daily weather data from **OpenWeatherMap.org**, organizes it into a clean format, and appends it to a historical CSV ledger using GitHub Actions. After this, a separate program can be used by users at home to search and view the data collected.
 
 ## Features
-* **Data Pulling**: This program will pull forecast data from the *openweathermap.org* website 3 times a day via API calls through GitHub Actions workflows.
+* **Data Pulling**: This program will pull forecast data from the *openweathermap.org* website 2 times a day via API calls through GitHub Actions workflows.
 * **Automated committing and Error Catching**: This program can self commit new data to the repository and run its own backend python unittests.
 * **User Interface**: This project has a user program that can be run from home and allows users to search for the weather forecasts for any day the project has records for.
 
