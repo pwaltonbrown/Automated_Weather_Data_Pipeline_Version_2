@@ -31,7 +31,7 @@ def fetch_data():
         if DATE_COL not in box1.columns:
 
             # raise error
-            raise ValueError(f"Column '{DATE_COL}' not found in the CSV file. avalailable columns: {list(box.columns)}")
+            raise ValueError(f"Column '{DATE_COL}' not found in the CSV file. avalailable columns: {list(box1.columns)}")
 
         #strip comas from column
         box1[DATE_COL] = box1[DATE_COL].str.replace(',', '')
@@ -55,7 +55,7 @@ def fetch_data():
         elif isinstance(e, pd.errors.EmptyDataError):
             mbox.showerror("Error", f"failed to read data due to empty data, please try again: {e}")
         elif isinstance(e, pd.errors.DtypeWarning):
-            mbox.showerror("Error", f"failed to read data due to column datatype being incorrect, please try again: {e}")a
+            mbox.showerror("Error", f"failed to read data due to column datatype being incorrect, please try again: {e}")
         else:
             mbox.showerror("Error", f"failed to fetch data, please try again: {e}")
 
